@@ -1,5 +1,4 @@
-# Identificação automática de padrões melódicos em partituras digitais  
-### utilizando análise computacional baseada em intervalos e contorno melódico
+# Identificação automática de padrões melódicos em partituras digitais utilizando análise computacional
 
 ## Tema
 Desenvolvimento de uma ferramenta computacional para **identificação automática de padrões melódicos em partituras digitais**.
