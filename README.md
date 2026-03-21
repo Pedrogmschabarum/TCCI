@@ -1,4 +1,5 @@
-# Resumo do Projeto de TCC
+# Identificação automática de padrões melódicos em partituras digitais  
+### utilizando análise computacional baseada em intervalos e contorno melódico
 
 ## Tema
 Desenvolvimento de uma ferramenta computacional para **identificação automática de padrões melódicos em partituras digitais**.
