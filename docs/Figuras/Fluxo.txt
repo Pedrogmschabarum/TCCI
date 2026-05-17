@@ -1,0 +1,39 @@
+@startuml
+title Fluxo geral do sistema proposto
+
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName Arial
+skinparam activity {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+}
+
+start
+
+:Arquivos MusicXML;
+
+:Extração da linha melódica principal;
+
+:Sequência de notas;
+
+fork
+  :Representação intervalar;
+fork again
+  :Representação por contorno;
+end fork
+
+:Aplicação de janelas deslizantes;
+
+:Comparação de subsequências;
+
+:Identificação de padrões recorrentes;
+
+:Apresentação das ocorrências e compassos;
+
+:Análise qualitativa dos resultados;
+
+stop
+
+@enduml
