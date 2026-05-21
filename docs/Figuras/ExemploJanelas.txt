@@ -1,0 +1,29 @@
+@startuml
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam rectangle {
+  BorderColor black
+  BackgroundColor white
+  RoundCorner 10
+}
+
+rectangle "Sequência intervalar original\n+2   +3   -1   +5   -2" as seq
+
+rectangle "Janela 1\n[ +2   +3   -1 ]" as j1
+rectangle "Janela 2\n[ +3   -1   +5 ]" as j2
+rectangle "Janela 3\n[ -1   +5   -2 ]" as j3
+
+seq --> j1 : deslocamento 0
+seq --> j2 : deslocamento 1
+seq --> j3 : deslocamento 2
+
+rectangle "Subsequências candidatas a padrão" as saida
+
+j1 --> saida
+j2 --> saida
+j3 --> saida
+
+@enduml
